@@ -3,6 +3,11 @@ html {
   background: linear-gradient(#457EAC, #006989);
   background-size: 100%;
   background-attachment: fixed;
+  margin:0;
+}
+body{
+    margin:0;
+    height:100em
 }
 .btn {
     color: #fff;
@@ -141,7 +146,7 @@ a.btn,a.btn:hover {
     background-image: url("https://github.com/mayamcgill/BAM-resort/blob/master/Atlantis.png?raw=true");
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 900px; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
