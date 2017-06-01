@@ -172,9 +172,10 @@ a.btn,a.btn:hover {
     top: 0;
     margin:0em;
     margin-top:0em;
-    background-color:white;
+    background-color:black;
     display:block;
     height:5em;
+    color:white;
     contain:content;
 }
 #opener {
