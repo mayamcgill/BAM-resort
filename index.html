@@ -25,7 +25,12 @@
     <script>var fixmeTop = $('#header').offset().top;
 $(window).scroll(function() {
     var currentScroll = $(window).scrollTop();
-    if (currentScroll >= 960) {
+  if (currentScroll = 0){
+  $('#header').css({
+    visibility: 'none'
+  })
+  } 
+  else if (currentScroll >= 960) {
         $('#header').css({
             position: 'fixed',
             top: '0',
