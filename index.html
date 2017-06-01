@@ -57,7 +57,7 @@
 
 </div> <script>var fixmeTop = $('#header').offset().top;
 $(window).scroll(function() {
-    var currentScroll = $(window).scrollTop();
+    var currentScroll = $(window).scrollTop().valueOf();
   if (currentScroll = 0){
   $('#header').css({
     visibility: 'none'
