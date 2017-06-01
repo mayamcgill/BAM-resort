@@ -10,11 +10,8 @@
 
 <body>
 <div class="parallax"></div>
-  <div id="container" style="
-    contain: style;
-">
+  <div id="container">
   <div id="header">
-   <img src="https://github.com/mayamcgill/BAM-resort/blob/master/Atlantis.png?raw=true">
     <table id="hdesc">
 <tbody><tr>
 <td>Atlantis</td>
@@ -24,7 +21,22 @@
 </tr>  
 </tbody></table>
     </div>
-
+<script src="script.js"></script>
+    <script>var fixmeTop = $('#header').offset().top;
+$(window).scroll(function() {
+    var currentScroll = $(window).scrollTop();
+    if (currentScroll >= 960) {
+        $('#header').css({
+            position: 'fixed',
+            top: '0',
+            left: '0'
+        });
+    } else {
+        $('#header').css({
+            position: 'static'
+        });
+    }
+});</script>
   <div class="nav">
     <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -44,22 +56,7 @@
             </li>
       
       </div>
-    <script src="script.js"></script>
-    <script>var fixmeTop = $('#header').offset().top;
-$(window).scroll(function() {
-    var currentScroll = $(window).scrollTop();
-    if (currentScroll >= fixmeTop) {
-        $('#header').css({
-            position: 'fixed',
-            top: '0',
-            left: '0'
-        });
-    } else {
-        $('#header').css({
-            position: 'static'
-        });
-    }
-});</script>
+    
         <div id="main">
             <span id="opener" onclick="openNav()" style="
     padding: 5px;
