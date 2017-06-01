@@ -22,26 +22,7 @@
 </tbody></table>
     </div>
 <script src="script.js"></script>
-    <script>var fixmeTop = $('#header').offset().top;
-$(window).scroll(function() {
-    var currentScroll = $(window).scrollTop();
-  if (currentScroll = 0){
-  $('#header').css({
-    visibility: 'none'
-  })
-  } 
-  else if (currentScroll >= 960) {
-        $('#header').css({
-            position: 'fixed',
-            top: '0',
-            left: '0'
-        });
-    } else {
-        $('#header').css({
-            position: 'static'
-        });
-    }
-});</script>
+   
   <div class="nav">
     <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -74,5 +55,24 @@ $(window).scroll(function() {
 
   </div>
 
-</div>
+</div> <script>var fixmeTop = $('#header').offset().top;
+$(window).scroll(function() {
+    var currentScroll = $(window).scrollTop();
+  if (currentScroll = 0){
+  $('#header').css({
+    visibility: 'none'
+  })
+  } 
+  else if (currentScroll >= 960) {
+        $('#header').css({
+            position: 'fixed',
+            top: '0',
+            left: '0'
+        });
+    } else {
+        $('#header').css({
+            position: 'static'
+        });
+    }
+});</script>
 </body></html>
