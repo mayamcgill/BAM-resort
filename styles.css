@@ -146,7 +146,7 @@ a.btn,a.btn:hover {
     background-image: url("https://github.com/mayamcgill/BAM-resort/blob/master/Atlantis.png?raw=true");
 
     /* Set a specific height */
-    min-height: 900px; 
+    min-height: 960px; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
