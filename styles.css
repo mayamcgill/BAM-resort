@@ -1,148 +1,205 @@
-<html><head>
-  <title>Atlantis - Get Lost Here</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
-  <link rel="icon" href="favicon.ico" type="image/x-icon"><link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-</head>
+html {
+  height: 100%;
+  background: linear-gradient(#457EAC, #006989);
+  background-size: 100%;
+  background-attachment: fixed;
+  margin:0;
+}
+body{
+    margin:0;
+    height: 1000em;
+}
+.btn {
+    color: #fff;
+    border: 1px solid rgba(0,0,0,0.18);
+    background: rgba(0,0,0,0.38);
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.08)
+}
 
-<body>
-<div class="parallax"></div>
-  <div id="container">
-  <div id="header" class="fixme" style="position: static; top: 0px; left: 0px;">
-  <img src="https://github.com/mayamcgill/BAM-resort/blob/master/Atlantis.png?raw=true" style="
-    width: 9%;
-">  
-  
-  <table id="hdesc">
-<tbody><tr>
-<td>Atlantis</td>
-  </tr>
-  <tr>
-<td>Underwater Resort</td>
-</tr>  
-</tbody></table>
-    </div>
-<script src="script.js"></script>
-<script>var fixmeTop = $('.fixme').offset().top;
-$(window).scroll(function() {
-    var currentScroll = $(window).scrollTop();
-    if (currentScroll >= fixmeTop) {
-        $('.fixme').css({
-            position: 'fixed',
-            top: '0',
-            left: '0'
-        });
-    } else {
-        $('.fixme').css({
-            position: 'static'
-        });
+a.btn,a.btn:hover {
+    color: white!important
+}
+
+.btn {
+    margin-bottom: 5px;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,0.18);
+    background: rgba(0,0,0,0.38);
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.08);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px
+}
+
+.btn:hover::after,.btn:focus::after {
+    background: rgba(255,255,255,0.09);
+    color: white
+}
+
+.btn:active::after {
+    background: rgba(255,255,255,0.18) color:white
+}
+
+.btn_label.show {
+    display: block
+}
+
+.btn::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    border-radius: inherit
+}
+
+.btn.icon::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    border-radius: inherit;
+    background: url('http://static.tumblr.com/tpqedpr/cQ1mbwb60/de.png') 0 0 no-repeat
+}
+
+.btn.theme::before {
+    background-position: 0 -0px
+}
+
+.btn img {
+    width: 15px
+}
+
+.btn.icon {
+    padding-left: 20px
+}
+
+.btn:active::after {
+    background: rgba(255,255,255,0.18)
+}
+
+.clear {
+    clear: both;
+}
+
+#pagination {
+    display: all;
+}
+
+#navbar {
+    font-size: 50px;
+    color: white;
+    display: inline-block;
+    margin: 0;
+    top: 0;
+    cursor: pointer;
+    position: fixed;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(53, 53, 53, 0.97);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    /* color: #006989; */
+    list-style-type: none;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    color: #006989;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+    color: #000000;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: black;
+}
+#navItem {
+    color: #eaebed;
+}
+.parallax {
+    /* The image used */
+    background-image: url("https://github.com/mayamcgill/BAM-resort/blob/master/Atlantis.png?raw=true");
+
+    /* Set a specific height */
+    min-height: 960px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fixme {
+    border-bottom-style:solid;
+    border-bottom-width:thick;
+    border-color: #000;
+    width:100%;
+    top: 0;
+    margin:0em;
+    margin-top:0em;
+    background-color: rgba(173, 171, 171, 0.75);
+    display:block;
+    height:5em;
+    color: black;
     }
-});</script>
-   
-  <div id="main" style="
-    margin-top: 5em;
-    margin-left: 7em;
-    margin-right: 7em;
-">
-         <div id="opennav">   <span id="opener" onclick="openNav()" style="
+#hdesc {
+    float:right;
+    font-family: 'Ubuntu', sans-serif;
+    border-left-style:solid;
+    right:0;
+    border-color: black;
+    margin: auto;
+    padding: 20px 10px 19px 10px;
+    }
+#opener {
     padding: 5px;
     background-color: rgba(158, 158, 158, 0.38);
     color: burlywood;
     font-size: larger;
     font-family: 'Ubuntu';
-    margin-left: -6em;
-">☰Open</span>
-  </div>
-  <div id="sitecontent">
-  <div id="post1" class="post">
-  <h3 id="title">Location</h3>
-    <h5 id="posttext">Atlantis is a beautiful underwater resort off the coast of California. With flora and fauna unlike any other resort, Atlantis is a truly unique destination, ready for you to dive right in. Whether you're bringing family, a special someone, or you're exploring solo, our aquatic experience is one to amaze. </h5></div>
-  <div id="post2" class="post">
-  <h3 id="title">Who can enjoy Atlantis?</h3>
-    <h5 id="posttext">All are welcome at Atlantis, making it a truly magical society. That being said, there are two main Atlantis experiences. These are the family experience and the forever young experience. The forever young experience is the primary journey, targeted at young adults. It includes tours, wine tastings, and discounted rentals for diving. The family experience has affordable offers for babysitting and a discount for various rides.
-</h5></div><div id="post1" class="post">
-  <h3 id="title">Total</h3>
-    <h5 id="posttext">lly rad dudeeeeee</h5></div><div id="post2" class="post">
-  <h3 id="title">What if</h3>
-    <h5 id="posttext">I have an entire paragraph? Who knows? Will it still function? What's going on? Can I program a functional website?Develop a Product Mix Chart that outlines everything that your resort will offer. For instance, you might
-
-have products lines such as; Hotel, Restaurants, Shops, and Activities.
-
- List all the various product items that people can purchase at your resorts various areas. Think
-
-back to our discussion on Product Width and Depth to discuss your product offering.
-
-Background of
-
-Competitors
-
-Do research on at least two other resorts in your potential location. For the two resorts, you will need to
-
-find the following information. (Use sites like Orbitz, Travelocity, Hotels.com, etc. to help find this
-
-information.)
-
- Name of resort
-
- Location of resort
-
- Picture or map of the resort
-
- Number of rooms at the resort
-
- Services offered
-
- Entertainment offered
-
- Sporting events offered
-
- Food services offered
-
-Competitive
-
-Advantage
-
-What will your resort offer that will allow you to compete with the other resorts in your area? Will you
-
-compete with price? Features and Benefits?</h5></div><div id="post1" class="post">
-  <h3 id="title">Is this one</h3>
-    <h5 id="posttext">Weird?</h5></div></div>
-
-
-
-
-
-
-
-
-    
-        </div><div class="nav">
-    <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <li id="navItem">
-                <a href="/">Home</a>
-            </li>
-            <li id="navItem">
-                <a href="/about">About me!</a>
-            </li>
-           
-           
-            <li id="navItem">
-                <a href="/projects">Projects</a>
-            </li>
-            <li id="navItem">
-                <a href="/blog">Blog</a>
-            </li>
-      
-      </div>
-    
-        
-
-  </div>
-
-</div> 
-
-
-</body></html>
+    position:fixed;
+    z-index:10;
+    top:0;
+}
+.post {
+   background-color:white;
+   width: 30em;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   font-family:'Ubuntu';
+   text-align:center;
+   padding:20px;
+   display: inline-block;
+}
+#post1 {
+    float:left;
+    margin-left: 40px;
+}
+#post2 {
+    float:right;
+}
