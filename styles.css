@@ -154,14 +154,15 @@ a.btn,a.btn:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.fixme {  border-bottom-style:solid;
+.fixme {
+    border-bottom-style:solid;
     border-bottom-width:thick;
     border-color: #000;
     width:100%;
     top: 0;
     margin:0em;
     margin-top:0em;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.49);
     display:block;
     height:5em;
     color: black;
@@ -172,8 +173,8 @@ a.btn,a.btn:hover {
     border-left-style:solid;
     right:0;
     border-color: black;
-    margin: auto 20px;
-    padding: 20px 10px 30px 10px;
+    margin: auto;
+    padding: 20px 10px 19px 10px;
     }
 #opener {
     padding: 5px;
