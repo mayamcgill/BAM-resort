@@ -11,7 +11,7 @@
 <body>
 <div class="parallax"></div>
   <div id="container">
-  <div id="header">
+  <div id="header" class="fixme">
     <table id="hdesc">
 <tbody><tr>
 <td>Atlantis</td>
@@ -22,6 +22,21 @@
 </tbody></table>
     </div>
 <script src="script.js"></script>
+<script>var fixmeTop = $('.fixme').offset().top;
+$(window).scroll(function() {
+    var currentScroll = $(window).scrollTop();
+    if (currentScroll >= fixmeTop) {
+        $('.fixme').css({
+            position: 'fixed',
+            top: '0',
+            left: '0'
+        });
+    } else {
+        $('.fixme').css({
+            position: 'static'
+        });
+    }
+});</script>
    
   <div class="nav">
     <div id="mySidenav" class="sidenav">
