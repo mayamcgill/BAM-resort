@@ -154,22 +154,10 @@ a.btn,a.btn:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
-#hdesc {
-    float:right;
-    font-family: 'Ubuntu', sans-serif;
-    border-left-style:solid;
-    right:0;
-    border-color: black;
-    position:fixed;
-    margin: auto 20px;
-    padding: 20px 10px 30px 10px;
-}
-#header {
-    border-bottom-style:solid;
+.fixme {  border-bottom-style:solid;
     border-bottom-width:thick;
     border-color: #000;
     width:100%;
-    position: fixed;
     top: 0;
     margin:0em;
     margin-top:0em;
@@ -177,8 +165,16 @@ a.btn,a.btn:hover {
     display:block;
     height:5em;
     color: black;
-    contain:content;
-}
+    }
+#hdesc {
+    float:right;
+    font-family: 'Ubuntu', sans-serif;
+    border-left-style:solid;
+    right:0;
+    border-color: black;
+    margin: auto 20px;
+    padding: 20px 10px 30px 10px;
+    }
 #opener {
     padding: 5px;
     background-color: rgba(158, 158, 158, 0.38);
